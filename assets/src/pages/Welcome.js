@@ -38,6 +38,7 @@ const Welcome = () => {
             borderColor: "yellow",
             borderWidth: 2,
             padding: 12,
+            width: 233,
           }}
         >
           CONVERTER

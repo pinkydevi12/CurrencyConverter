@@ -15,7 +15,8 @@ const Navigation = () => {
         screenOptions={{
           headerShown: false,
         }}
-        initialRouteName={"Welcome"}>
+        initialRouteName={"Welcome"}
+      >
         <Stack.Screen name="Welcome" component={Welcome} />
         <Stack.Screen name="Loader" component={Loader} />
       </Stack.Navigator>
