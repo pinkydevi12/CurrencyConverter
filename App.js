@@ -1,12 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Navigation from './assets/src/navigation/stackNavigation/index';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Hello Team Currency Converter</Text>
-      <StatusBar style="auto" />
-    </View>
+<>
+  <Navigation/>
+</>
   );
 }
 
