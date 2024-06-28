@@ -12,7 +12,8 @@ const CustomButton = ({ title }) => {
           backgroundColor: "yellow",
           justifyContent: "center",
           borderRadius: 20,
-        }}>
+        }}
+      >
         <Text style={{ textAlign: "center", fontWeight: "bold" }}>{title}</Text>
       </TouchableOpacity>
     </View>
