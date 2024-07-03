@@ -1,11 +1,15 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 import React from "react";
+import Navigation from "./../navigation/stackNavigation/index";
 
-const CustomButton = ({ title }) => {
+const CustomButton = ({ title, Navigation }) => {
   return (
     <View>
       <TouchableOpacity
+        onPress={() => {
+          Navigation.navigate("SideNav");
+        }}
         style={{
           width: 300,
           height: 50,

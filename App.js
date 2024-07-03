@@ -1,14 +1,12 @@
-import { StyleSheet, Text, View } from "react-native";
-
+import { StyleSheet } from "react-native";
 import Navigation from "./src/navigation/stackNavigation/index";
-import { BottomNavigation } from "react-native-paper";
-import BottomTabNavigation from "./src/navigation/bottomNavigation";
+import BottomTabNavigation from "./src/navigation/bottomNavigation/index";
 
 export default function App() {
   return (
     <>
-      {/* <Navigation />*/}
-      <BottomTabNavigation />
+      <Navigation />
+      {/*<BottomTabNavigation/>*/}
     </>
   );
 }

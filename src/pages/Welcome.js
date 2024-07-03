@@ -4,10 +4,11 @@ import React, { useState } from "react";
 import CustomButton from "../components/CustomButton";
 import Loader from "../components/Loader";
 import { containerStyle } from "../styles";
+import Navigation from "./../navigation/stackNavigation/index";
 
 const WelcomeImage = require("../../assets/img/welcome.jpg");
 
-const Welcome = () => {
+const Welcome = (Navigation) => {
   const [isLoading, setIsLoading] = useState(false);
   return (
     <>
@@ -51,7 +52,10 @@ const Welcome = () => {
           </View>
 
           <View style={{ flex: 1, justifyContent: "center" }}>
-            <CustomButton title={"Get Started"}></CustomButton>
+            <CustomButton
+              navigation={Navigation}
+              title={"Get Started"}
+            ></CustomButton>
           </View>
         </ImageBackground>
       ) : (
