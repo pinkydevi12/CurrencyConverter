@@ -1,14 +1,15 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
-import React from "react";
 import Navigation from "./../navigation/stackNavigation/index";
+import React from "react";
 
 const CustomButton = ({ title, Navigation }) => {
+  console.log("Navigation", Navigation);
   return (
     <View>
       <TouchableOpacity
         onPress={() => {
-          Navigation.navigate("SideNav");
+          Navigation.navigation.navigate("BottomTab");
         }}
         style={{
           width: 300,
@@ -16,8 +17,7 @@ const CustomButton = ({ title, Navigation }) => {
           backgroundColor: "yellow",
           justifyContent: "center",
           borderRadius: 20,
-        }}
-      >
+        }}>
         <Text style={{ textAlign: "center", fontWeight: "bold" }}>{title}</Text>
       </TouchableOpacity>
     </View>

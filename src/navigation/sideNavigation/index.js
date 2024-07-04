@@ -1,25 +1,36 @@
-import { createDrawerNavigator } from "@react-navigation/drawer";
-import { StyleSheet, Text, View } from "react-native";
-import React from "react";
-import HomeScreen from "./../../pages/HomeScreen";
-import ProfileScreen from "../../pages/ProfileScreen";
-import DetailsScreen from "../../pages/DetailsScreen";
+import React, { useState } from "react";
 
-const SideNavigation = () => {
-  const Drawer = createDrawerNavigator();
+import { Drawer } from "react-native-paper";
+
+const SideNavigation = ({ navigation }) => {
+  const [active, setActive] = useState("");
+
   return (
-    <Drawer.Navigator
-      screenOptions={{
-        headerShown: false,
-      }}
-    >
-      <Drawer.Screen name="Home" component={HomeScreen} />
-      <Drawer.Screen name="Detail" component={DetailsScreen} />
-      <Drawer.Screen name="Profile" component={ProfileScreen} />
-    </Drawer.Navigator>
+    <Drawer.Section title="Some title">
+      <Drawer.Item
+        label="Home"
+        active={active === "first"}
+        onPress={() => {
+          setActive("first");
+          navigation.navigation.navigate("Home");
+        }}
+      />
+      <Drawer.Item
+        label="Details"
+        active={active === "second"}
+        onPress={() => {
+          navigation.navigation.navigate("Details");
+        }}
+      />
+      <Drawer.Item
+        label="Profile"
+        active={active === "second"}
+        onPress={() => {
+          navigation.navigation.navigate("Details");
+        }}
+      />
+    </Drawer.Section>
   );
 };
 
 export default SideNavigation;
-
-const styles = StyleSheet.create({});

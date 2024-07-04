@@ -5,4 +5,6 @@ export const COLORS = {
   PRIMARY_COLOR: "#2C0E94",
   TEXT_FIELD_COLOR: "#f0f4f3",
   CARD_COLOR: "#3E0A90",
+  TAB_COLOR: "#fff",
+  TEXT_COLOR: "#ddddeb",
 };
