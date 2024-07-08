@@ -1,5 +1,13 @@
-import { Icon, MD3Colors } from "react-native-paper";
-import { StyleSheet, Text, View } from "react-native";
+import {
+  Appbar,
+  Button,
+  Card,
+  Divider,
+  List,
+  Text,
+  TextInput,
+} from "react-native-paper";
+import { StyleSheet, View } from "react-native";
 
 import { AntDesign } from "@expo/vector-icons";
 import { COLORS } from "../constants/Colors";
@@ -16,7 +24,7 @@ const HomeScreen = () => {
         height: "100%",
         marginTop: 40,
       }}>
-      <ScrollView>
+      <>
         <View
           style={{
             flexDirection: "row",
@@ -44,7 +52,7 @@ const HomeScreen = () => {
           <View>
             <View
               style={{
-                borderColor: "#751299",
+                borderColor: COLORS.CARD_TEXT_COLOR,
                 borderWidth: 2,
                 width: 80,
                 height: 80,
@@ -76,10 +84,39 @@ const HomeScreen = () => {
               marginHorizontal: 20,
               borderRadius: 20,
             }}>
-            <CustomCard />
+            <ScrollView style={{ height: 600 }}>
+              <Card style={styles.card}>
+                <Card.Title title="Conversion Rates" />
+                <Card.Content>
+                  <List.Item
+                    title="USD to EUR"
+                    description="1 USD = 0.85 EUR"
+                    left={(props) => (
+                      <List.Icon {...props} icon="currency-usd" />
+                    )}
+                  />
+                  <Divider />
+                  <List.Item
+                    title="USD to GBP"
+                    description="1 USD = 0.75 GBP"
+                    left={(props) => (
+                      <List.Icon {...props} icon="currency-gbp" />
+                    )}
+                  />
+                  <Divider />
+                  <List.Item
+                    title="USD to INR"
+                    description="1 USD = 74.85 INR"
+                    left={(props) => (
+                      <List.Icon {...props} icon="currency-inr" />
+                    )}
+                  />
+                </Card.Content>
+              </Card>
+            </ScrollView>
           </View>
         </View>
-      </ScrollView>
+      </>
     </SafeAreaView>
   );
 };

@@ -20,7 +20,7 @@ const BottomTabNavigation = () => {
         backgroundColor: COLORS.TAB_COLOR,
       }}>
       <Tab.Screen
-        name="Feed"
+        name="Home"
         component={HomeScreen}
         options={{
           tabBarLabel: "Home",

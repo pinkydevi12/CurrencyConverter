@@ -7,4 +7,6 @@ export const COLORS = {
   CARD_COLOR: "#3E0A90",
   TAB_COLOR: "#fff",
   TEXT_COLOR: "#ddddeb",
+  CARD_TEXT_COLOR: "#751299",
+  LIGHT_YELLOW: "#dea514",
 };
