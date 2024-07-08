@@ -18,7 +18,8 @@ const CustomCard = () => {
         alignItems: "center",
         paddingHorizontal: 10,
         justifyContent: "space-between",
-      }}>
+      }}
+    >
       <View>
         <Image
           source={IMAGE_LINK.Afganistan}
@@ -31,7 +32,8 @@ const CustomCard = () => {
             fontSize: 20,
             fontWeight: "bold",
             color: COLORS.TEXT_COLOR,
-          }}>
+          }}
+        >
           USD
         </Text>
 
@@ -40,14 +42,14 @@ const CustomCard = () => {
             fontSize: 25,
             fontWeight: "bold",
             color: COLORS.TEXT_COLOR,
-          }}>
+          }}
+        >
           <Text
             style={{
               fontWeight: "bold",
               color: COLORS.LABEL_COLOR,
-            }}>
-            >{" "}
-          </Text>
+            }}
+          ></Text>
           CAD
         </Text>
       </View>
@@ -57,13 +59,15 @@ const CustomCard = () => {
           width: 80,
           alignItems: "flex-end",
           paddingRight: 10,
-        }}>
+        }}
+      >
         <Text
           style={{
             fontSize: 25,
             fontWeight: "bold",
             color: COLORS.LIGHT_YELLOW,
-          }}>
+          }}
+        >
           1.26
         </Text>
       </View>

@@ -1,13 +1,5 @@
 import { Alert, ScrollView, StyleSheet, View } from "react-native";
-import {
-  Appbar,
-  Button,
-  Card,
-  Divider,
-  List,
-  Text,
-  TextInput,
-} from "react-native-paper";
+import { Appbar, Button, Card, Text, TextInput } from "react-native-paper";
 import React, { useState } from "react";
 
 import axios from "axios";
@@ -67,7 +59,8 @@ const DetailsScreen = () => {
             <Button
               mode="contained"
               onPress={handleConvert}
-              style={styles.button}>
+              style={styles.button}
+            >
               Convert
             </Button>
             {convertedAmount && (

@@ -8,5 +8,5 @@ export const COLORS = {
   TAB_COLOR: "#fff",
   TEXT_COLOR: "#ddddeb",
   CARD_TEXT_COLOR: "#751299",
-  LIGHT_YELLOW: "#dea514",
+  LIGHT_COLOR: "#dea514",
 };
