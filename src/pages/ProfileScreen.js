@@ -1,5 +1,4 @@
 import * as ImagePicker from "expo-image-picker";
-
 import { Avatar, Button } from "react-native-paper";
 import {
   SafeAreaView,

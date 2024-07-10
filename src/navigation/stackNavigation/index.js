@@ -1,14 +1,9 @@
-import { StyleSheet, Text, View } from "react-native";
-
+import { StyleSheet } from "react-native";
 import BottomTabNavigation from "../bottomNavigation";
-import HomeScreen from "../../pages/HomeScreen";
 import { NavigationContainer } from "@react-navigation/native";
 import React from "react";
-import SideNavigation from "../sideNavigation";
 import Welcome from "../../pages/Welcome";
 import { createStackNavigator } from "@react-navigation/stack";
-
-// import SideNavigation from "../sideNavigation";
 
 const Navigation = () => {
   const Stack = createStackNavigator();
@@ -19,7 +14,8 @@ const Navigation = () => {
         screenOptions={{
           headerShown: false,
         }}
-        initialRouteName={"Welcome"}>
+        initialRouteName={"Welcome"}
+      >
         <Stack.Screen name="Welcome" component={Welcome} />
         <Stack.Screen name="BottomTab" component={BottomTabNavigation} />
       </Stack.Navigator>

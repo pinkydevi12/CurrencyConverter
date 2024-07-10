@@ -1,6 +1,5 @@
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Text, TouchableOpacity, View } from "react-native";
 
-import Navigation from "./../navigation/stackNavigation/index";
 import React from "react";
 
 const CustomButton = ({ title, Navigation }) => {

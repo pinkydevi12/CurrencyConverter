@@ -4,10 +4,8 @@ import DetailsScreen from "../../pages/DetailsScreen";
 import HomeScreen from "./../../pages/HomeScreen";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
-import { NavigationContainer } from "@react-navigation/native";
 import ProfileScreen from "../../pages/ProfileScreen";
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
-import { useState } from "react";
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -18,7 +16,8 @@ const BottomTabNavigation = () => {
       inactiveColor={COLORS.PRIMARY_COLORds}
       barStyle={{
         backgroundColor: COLORS.TAB_COLOR,
-      }}>
+      }}
+    >
       <Tab.Screen
         name="Home"
         component={HomeScreen}

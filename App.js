@@ -1,12 +1,10 @@
 import { StyleSheet } from "react-native";
 import Navigation from "./src/navigation/stackNavigation/index";
-import BottomTabNavigation from "./src/navigation/bottomNavigation/index";
 
 export default function App() {
   return (
     <>
       <Navigation />
-      {/*<BottomTabNavigation/>*/}
     </>
   );
 }

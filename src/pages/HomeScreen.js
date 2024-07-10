@@ -1,9 +1,7 @@
 import { Card, Divider, List, Text } from "react-native-paper";
 import { StyleSheet, View } from "react-native";
-
 import { AntDesign } from "@expo/vector-icons";
 import { COLORS } from "../constants/Colors";
-import CustomCard from "../components/CustomCard";
 import React from "react";
 import { SafeAreaView } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
@@ -128,7 +126,7 @@ const HomeScreen = () => {
                   />
                   <Divider />
                   <List.Item
-                    title="USD to EUR "
+                    title="USD to ETH "
                     description="1 USD = 0.00034 ETH"
                     left={(props) => (
                       <List.Icon {...props} icon="currency-eth" />
