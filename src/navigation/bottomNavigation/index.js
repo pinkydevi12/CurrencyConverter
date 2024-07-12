@@ -13,9 +13,9 @@ const BottomTabNavigation = () => {
   return (
     <Tab.Navigator
       activeColor="black"
-      inactiveColor={COLORS.PRIMARY_COLORds}
+      inactiveColor={COLORS.PRIMARY_COLOR}
       barStyle={{
-        backgroundColor: COLORS.TAB_COLOR,
+        backgroundColor: COLORS.LIGHT_COLOR,
       }}
     >
       <Tab.Screen
